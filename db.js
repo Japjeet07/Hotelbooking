@@ -1,17 +1,16 @@
- const mongoose = require('mongoose'); 
+const mongoose = require("mongoose");
 
- var mongoURL = 'mongodb+srv://humpty:humpty@cluster0.delqfcl.mongodb.net/mern-rooms'
-
- mongoose.connect(mongoURL , {useUnifiedTopology : true , useNewUrlParser : true})
-
- var connection= mongoose.connection
-
- connection.on('error' , ()=>{
-    console.log('mongo db connection failed')
- })
-
- connection.on('connected' , ()=>{
-    console.log('mongo db connection successfull')
- })
-
- module.exports= mongoose
+module.exports = () => {
+	const connectionParams = {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	};
+	try {
+        mongoose.set("strictQuery", false);
+		mongoose.connect(process.env.DB, connectionParams);
+		console.log("Connected to database successfully");
+	} catch (error) {
+		console.log(error);
+		console.log("Could not connect database!");
+	}
+};
