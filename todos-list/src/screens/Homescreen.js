@@ -59,7 +59,7 @@ function Homescreen() {
         ) : error ? (
           <h1>Error</h1>
         ) : (
-         rooms && rooms.map((room) => {
+         rooms && rooms.map && rooms.map((room) => {
             return <div className="col-md-9 mt-2">
                 <Room room={room} fromdate={fromdate} todate={todate}/>
             </div>;
