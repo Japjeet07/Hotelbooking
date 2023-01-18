@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 
 const app = express();
 
@@ -11,6 +12,7 @@ const bookingsRoute = require('./routes/bookingsRoute')
 connection();
 
 app.use(express.json())
+app.use(cors());
 
 app.use('/api/rooms' , roomsRoute)
 app.use('/api/users' , usersRoute)
