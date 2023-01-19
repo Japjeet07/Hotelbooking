@@ -28,7 +28,7 @@ function Register() {
             }
            try {
             setloading(true);
-            const result = (await axios.post('/api/users/register' , user)).data
+            const result = (await axios.post('https://mern-hotel-backend2.onrender.com/api/users/register' , user)).data
             setloading(false);
             setsuccess(true)
             setname('')
