@@ -17,7 +17,7 @@ function Homescreen() {
     async function fetchdata() {
       try {
         setloading(true);
-        const data = (await axios.get("/api/rooms/getallrooms")).data;
+        const data = (await axios.get("https://mern-hotel-backend2.onrender.com/api/rooms/getallrooms")).data;
 
         setrooms(data);
         setloading(false);
