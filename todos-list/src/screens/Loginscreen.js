@@ -18,7 +18,7 @@ function Loginscreen() {
     try {
       setloading(true);
 
-      const result = (await axios.post('/api/users/login' , user)).data
+      const result = (await axios.post('https://mern-hotel-backend2.onrender.com/api/users/login' , user)).data
       setloading(false);
       localStorage.setItem('currentuser' , JSON.stringify(result));
       window.location.href='/'
