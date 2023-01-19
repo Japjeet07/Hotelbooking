@@ -43,7 +43,7 @@ function Bookingsscrren({match}) {
         const fetchData = async () => {
           try {
             setloading(true)
-            const data = (await axios.post('/api/rooms/getroombyid',  {roomid : id})).data
+            const data = (await axios.post('https://mern-hotel-backend2.onrender.com/api/rooms/getroombyid',  {roomid : id})).data
             settotalAmount(data.rentperday * totaldays)
             setroom(data)
             setloading(false)
@@ -73,7 +73,7 @@ function Bookingsscrren({match}) {
       }
 
        try {
-        const data= await axios.post('/api/bookings/bookroom' , bookingDetails).data
+        const data= await axios.post('https://mern-hotel-backend2.onrender.com/api/bookings/bookroom' , bookingDetails).data
         setpayment(data)
        } catch (error) {
         
