@@ -1,3 +1,24 @@
+# Description
+
+This application is a hotel booking application that fetches various information about the hotel directly from the
+database for example name,address,price and guest limit.
+
+It also gives the option to signup/login the user which is further used in the cart page which shows the billing menu with user name and creditentials.
+
+With option to select the booking date and the checkout date this application filters the rooms on the basis of availability.
+
+# Deployment link
+
+https://mern-hotel-frontend.onrender.com/
+
+# Screenshots
+
+![Screenshot from 2023-01-27 21-09-44](https://user-images.githubusercontent.com/84196130/215126412-daeea8a7-edfc-4d53-a264-b392ec07502a.png)
+![Screenshot from 2023-01-27 21-09-25](https://user-images.githubusercontent.com/84196130/215126445-c6c8cac9-daf4-4b36-88e5-aeac7bbddebc.png)
+![Screenshot from 2023-01-27 21-09-18](https://user-images.githubusercontent.com/84196130/215126486-1d198f22-cae3-4000-b214-68b4beb6b47f.png)
+![Screenshot from 2023-01-27 21-08-55](https://user-images.githubusercontent.com/84196130/215126512-b81cd8b7-9b3d-42aa-8b83-20844af3d3b6.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
