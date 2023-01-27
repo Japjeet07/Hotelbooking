@@ -1,6 +1,6 @@
 # Description
 
-This application is a hotel booking application that fetches various information about the hotel directly from the
+This MERN Full-Stack application is a hotel booking application that fetches various information about the hotel directly from the
 database for example name,address,price and guest limit.
 
 It also gives the option to signup/login the user which is further used in the cart page which shows the billing menu with user name and creditentials.
